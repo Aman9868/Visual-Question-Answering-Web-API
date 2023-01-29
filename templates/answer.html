@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Predicted Output</title>
+     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/out.css')}}">
+</head>
+<body>
+   <h1>Your Analyzed Text -- {{purpose}}</h1><br>
+  <h2>Output</h2><br>
+   <div>
+        <img src="{{ url_for('static', filename='output/input_image.jpg') }}"  height="400px" width="540px" alt="Input Image">
+   </div>
+<p>
+     It is a : {{ answer }}
+</p>
+</body></html>
